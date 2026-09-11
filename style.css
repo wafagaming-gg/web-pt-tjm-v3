@@ -343,3 +343,122 @@ footer {
     .about-content, .contact-grid { grid-template-columns: 1fr; }
     .stats { grid-template-columns: 1fr; }
 }
+.documentation-section {
+    padding: 85px 20px;
+    background: #f5f8fc;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.section-label {
+    color: #f59e0b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 10px 0;
+    color: #102a43;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+.doc-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.doc-filter {
+    border: 1px solid #d8e1eb;
+    background: white;
+    color: #334155;
+    padding: 10px 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.doc-filter:hover,
+.doc-filter.active {
+    background: #102a43;
+    color: white;
+}
+
+.doc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.doc-card {
+    overflow: hidden;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, .08);
+    transition: .3s;
+}
+
+.doc-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, .16);
+}
+
+.doc-card img {
+    width: 100%;
+    height: 210px;
+    display: block;
+    object-fit: cover;
+}
+
+.doc-info {
+    padding: 18px;
+}
+
+.doc-info span {
+    color: #f59e0b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.doc-info h3 {
+    margin: 8px 0;
+    color: #102a43;
+    font-size: 18px;
+}
+
+.doc-info p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 950px) {
+    .doc-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .doc-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 430px) {
+    .doc-grid {
+        grid-template-columns: 1fr;
+    }
+}
