@@ -10,6 +10,21 @@ body {
     color: #333;
 }
 
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+</style>
+
 /* Header & Navigation */
 header {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
