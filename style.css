@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-<style>
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -23,7 +22,6 @@ body {
   object-fit: cover;
   border-radius: 12px;
 }
-</style>
 
 /* Header & Navigation */
 header {
@@ -89,7 +87,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200'); /* Menggunakan gambar real */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -229,6 +227,32 @@ h2 i {
     display: block;
 }
 
+/* Trust badges (About section) */
+.trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+.badge-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border: 1px solid #e1e5e9;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1e3c72;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.badge-chip i {
+    color: #ffd700;
+}
+
 /* Contact */
 .contact-grid {
     display: grid;
@@ -324,25 +348,7 @@ footer {
     }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hamburger { display: flex; }
-    .nav-links {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: #1e3c72;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        padding: 2rem 0;
-    }
-    .nav-links.active { left: 0; }
-    .hero-content h1 { font-size: 2.5rem; }
-    .about-content, .contact-grid { grid-template-columns: 1fr; }
-    .stats { grid-template-columns: 1fr; }
-}
+/* Documentation / Portfolio */
 .documentation-section {
     padding: 85px 20px;
     background: #f5f8fc;
@@ -445,9 +451,211 @@ footer {
     line-height: 1.6;
 }
 
+/* Testimonials */
+.testimonial-section {
+    padding: 85px 20px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.testimonial-label {
+    color: #ffd700 !important;
+}
+
+.testimonial-title {
+    color: white !important;
+}
+
+.testimonial-title i {
+    color: #ffd700;
+}
+
+.testimonial-sub {
+    color: #dbe4f5 !important;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.testimonial-stars {
+    color: #f59e0b;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.testimonial-card .quote {
+    color: #475569;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #1e3c72;
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.testimonial-author h4 {
+    color: #102a43;
+    font-size: 1rem;
+}
+
+.testimonial-author span {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* FAQ */
+.faq-section {
+    padding: 85px 20px;
+    background: white;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.faq-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.faq-item.active {
+    border-color: #1e3c72;
+    box-shadow: 0 10px 25px rgba(30,60,114,0.12);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    cursor: pointer;
+    background: #f8fafc;
+    font-weight: 600;
+    color: #102a43;
+    transition: 0.3s;
+}
+
+.faq-item.active .faq-question {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+.faq-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+    color: #f59e0b;
+}
+
+.faq-item.active .faq-icon {
+    color: #ffd700;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    background: white;
+}
+
+.faq-answer p {
+    padding: 0 24px 20px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 400px;
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 999;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background: #1ebe57;
+}
+
+/* Responsive */
 @media (max-width: 950px) {
     .doc-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #1e3c72;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+    }
+    .nav-links.active { left: 0; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .about-content, .contact-grid { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr; }
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+        bottom: 18px;
+        right: 18px;
     }
 }
 
@@ -460,5 +668,9 @@ footer {
 @media (max-width: 430px) {
     .doc-grid {
         grid-template-columns: 1fr;
+    }
+    .faq-question {
+        padding: 16px 18px;
+        font-size: 0.95rem;
     }
 }

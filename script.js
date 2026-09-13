@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     contactForm.reset();
                 })
                 .catch((error) => {
-                    alert('❌ Gagal mengirim pesan. Silakan hubungi kami via WhatsApp: 0812-3456-7891');
+                    alert('❌ Gagal mengirim pesan. Silakan hubungi kami via WhatsApp: 0812-9692-9581');
                     console.error('EmailJS Error:', error);
                 })
                 .finally(() => {
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 5. Counter Animation (FIXED) ---
+    // --- 5. Counter Animation ---
     function animateCounters() {
         const counters = document.querySelectorAll('.stat-number');
         
@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
-                    // Logika penambahan tanda "+" untuk angka tertentu
                     const suffix = (target === 15 || target === 500 || target === 1000) ? "+" : "";
                     counter.textContent = target + suffix;
                     clearInterval(timer);
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 6. Intersection Observer ---
+    // --- 6. Intersection Observer (Counter) ---
     const observerOptions = {
         threshold: 0.5,
         rootMargin: '0px 0px -100px 0px'
@@ -133,5 +132,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.style.backdropFilter = 'none';
             }
         }
+    });
+
+    // --- 8. Portofolio Filter (Dokumentasi) ---
+    const docFilters = document.querySelectorAll('.doc-filter');
+    const docCards = document.querySelectorAll('.doc-card');
+
+    docFilters.forEach(filter => {
+        filter.addEventListener('click', () => {
+            docFilters.forEach(f => f.classList.remove('active'));
+            filter.classList.add('active');
+
+            const category = filter.getAttribute('data-filter');
+
+            docCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // --- 9. FAQ Accordion ---
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const icon = item.querySelector('.faq-icon');
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                const otherIcon = otherItem.querySelector('.faq-icon');
+                otherIcon.classList.remove('fa-minus');
+                otherIcon.classList.add('fa-plus');
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            }
+        });
     });
 });

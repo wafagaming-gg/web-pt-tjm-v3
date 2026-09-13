@@ -18,6 +18,8 @@
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#services">Layanan</a></li>
                 <li><a href="#about">Tentang</a></li>
+                <li><a href="#dokumentasi">Portofolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -78,7 +80,11 @@
             <div class="about-text">
                 <p>PT.Tri Jaya Muktiwari Berkomitmen untuk memberikan hasil pekerjaan terbaik melalui kualitas, integritas, serta pelayanan profesional demi terciptanya kepercayaan dan kepuasan pelanggan.</p>
                 <p>Kami memiliki tim teknisi bersertifikat ahli (SLO, SLA) dan peralatan modern untuk menjamin kualitas pekerjaan yang prima dan tepat waktu.</p>
-                <p><strong>Berlisensi Resmi Ketenagalistrikan</strong> | <strong>Garansi Pekerjaan</strong> | <strong>Layanan 24/7</strong></p>
+                <div class="trust-badges">
+                    <span class="badge-chip"><i class="fas fa-certificate"></i> Berlisensi Resmi Ketenagalistrikan</span>
+                    <span class="badge-chip"><i class="fas fa-shield-alt"></i> Garansi Pekerjaan</span>
+                    <span class="badge-chip"><i class="fas fa-headset"></i> Layanan 24/7</span>
+                </div>
             </div>
             <div>
                 <div class="stats">
@@ -145,75 +151,211 @@
             </form>
         </div>
     </section>
-<section id="dokumentasi" class="documentation-section">
-    <div class="container">
-        <div class="section-heading">
-            <span class="section-label">PORTOFOLIO KAMI</span>
-            <h2><i class="fas fa-images"></i> Dokumentasi Proyek</h2>
-            <p>Beberapa dokumentasi pekerjaan dan proyek PT. Tri Jaya Muktiwari.</p>
+
+    <section id="dokumentasi" class="documentation-section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">PORTOFOLIO KAMI</span>
+                <h2><i class="fas fa-images"></i> Dokumentasi Proyek</h2>
+                <p>Beberapa dokumentasi pekerjaan dan proyek PT. Tri Jaya Muktiwari.</p>
+            </div>
+
+            <div class="doc-filters">
+                <button class="doc-filter active" data-filter="all">Semua</button>
+                <button class="doc-filter" data-filter="instalasi">Instalasi</button>
+                <button class="doc-filter" data-filter="panel">Panel & Maintenance</button>
+                <button class="doc-filter" data-filter="lapangan">Lapangan</button>
+            </div>
+
+            <div class="doc-grid">
+                <article class="doc-card" data-category="instalasi">
+                    <img src="images/dokumentasi-01.jpg" alt="Teknisi memasang panel listrik" loading="lazy">
+                    <div class="doc-info"><span>Instalasi</span><h3>Instalasi Panel Distribusi</h3><p>Tim teknisi memasang dan merapikan panel listrik di lokasi proyek.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="instalasi">
+                    <img src="images/dokumentasi-02.jpg" alt="Pengkabelan panel listrik" loading="lazy">
+                    <div class="doc-info"><span>Instalasi</span><h3>Pemasangan Kabel Panel</h3><p>Proses pengkabelan panel listrik dilakukan dengan rapi dan sesuai standar.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="panel">
+                    <img src="images/dokumentasi-03.jpg" alt="Panel distribusi dan kapasitor" loading="lazy">
+                    <div class="doc-info"><span>Panel Listrik</span><h3>Panel Distribusi & Kapasitor</h3><p>Instalasi panel ATS-AMF, LVMDP, dan panel kapasitor 450 kVAR untuk kebutuhan industri.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="lapangan">
+                    <img src="images/dokumentasi-04.jpg" alt="Serah terima proyek bersama PLN" loading="lazy">
+                    <div class="doc-info"><span>Lapangan</span><h3>Penyalaan Perubahan Daya</h3><p>Serah terima pekerjaan peningkatan daya listrik bersama tim PLN di lokasi proyek.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="instalasi">
+                    <img src="images/dokumentasi-05.jpg" alt="Instalasi panel di lapangan" loading="lazy">
+                    <div class="doc-info"><span>Instalasi</span><h3>Instalasi Panel Lapangan</h3><p>Pemasangan panel distribusi di area komersial.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="lapangan">
+                    <img src="images/dokumentasi-06.jpg" alt="Perbaikan panel di lapangan" loading="lazy">
+                    <div class="doc-info"><span>Lapangan</span><h3>Penanganan Gangguan Lapangan</h3><p>Penanganan gangguan panel listrik langsung di lokasi klien.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="panel">
+                    <img src="images/dokumentasi-07.jpg" alt="Pemeriksaan panel LVMDP" loading="lazy">
+                    <div class="doc-info"><span>Maintenance</span><h3>Pemeriksaan Panel LVMDP</h3><p>Pengecekan rutin kondisi panel LVMDP dan kapasitor untuk menjaga keandalan sistem.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="instalasi">
+                    <img src="images/dokumentasi-08.jpg" alt="Instalasi panel outdoor" loading="lazy">
+                    <div class="doc-info"><span>Instalasi</span><h3>Instalasi Panel Outdoor</h3><p>Pemasangan dan pengecekan panel listrik di area publik.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="panel">
+                    <img src="images/dokumentasi-09.jpg" alt="Instalasi trafo distribusi" loading="lazy">
+                    <div class="doc-info"><span>Panel Listrik</span><h3>Instalasi Trafo Distribusi</h3><p>Pemasangan trafo distribusi lengkap dengan sistem pendingin dan pengaman.</p></div>
+                </article>
+
+                <article class="doc-card" data-category="lapangan">
+                    <img src="images/dokumentasi-10.jpg" alt="Tim teknisi di lokasi proyek" loading="lazy">
+                    <div class="doc-info"><span>Lapangan</span><h3>Tim Teknisi di Lokasi Proyek</h3><p>Kolaborasi tim dalam pengecekan panel switchgear di ruang panel.</p></div>
+                </article>
+            </div>
         </div>
+    </section>
 
-        <div class="doc-filters">
-            <button class="doc-filter active" data-filter="all">Semua</button>
-            <button class="doc-filter" data-filter="instalasi">Instalasi</button>
-            <button class="doc-filter" data-filter="panel">Panel & Maintenance</button>
-            <button class="doc-filter" data-filter="plts">PLTS</button>
-            <button class="doc-filter" data-filter="lapangan">Lapangan</button>
+    <section id="testimoni" class="testimonial-section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label testimonial-label">KATA KLIEN KAMI</span>
+                <h2 class="testimonial-title"><i class="fas fa-quote-right"></i> Testimoni Klien</h2>
+                <p class="testimonial-sub">Kepercayaan klien adalah bukti nyata kualitas kerja kami.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Pengerjaan instalasi panel listrik di pabrik kami sangat rapi dan tepat waktu. Tim teknisinya profesional dan komunikatif dari awal survei sampai selesai."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">BS</div>
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <span>Manager Pabrik, Cibitung</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Instalasi PLTS di rumah kami berjalan lancar, tagihan listrik langsung turun signifikan. Tim juga sabar menjelaskan cara kerja sistemnya."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RA</div>
+                        <div>
+                            <h4>Rina Anggraini</h4>
+                            <span>Pemilik Rumah, Bekasi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Layanan emergency 24 jamnya benar-benar terbukti. Gangguan listrik mendadak di kantor kami ditangani cepat tanpa mengganggu operasional besok harinya."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">HW</div>
+                        <div>
+                            <h4>Hendra Wijaya</h4>
+                            <span>Owner Ruko, Cikarang</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="doc-grid">
-            <article class="doc-card" data-category="instalasi">
-                <img src="dokumentasi-01.jpg" alt="Instalasi listrik" loading="lazy">
-                <div class="doc-info"><span>Instalasi</span><h3>Instalasi Kelistrikan</h3><p>Pemasangan sistem listrik secara aman dan profesional.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="instalasi">
-                <img src="dokumentasi-02.jpg" alt="Pekerjaan instalasi listrik" loading="lazy">
-                <div class="doc-info"><span>Instalasi</span><h3>Pekerjaan Kelistrikan</h3><p>Proses pengerjaan instalasi di lokasi proyek.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="panel">
-                <img src="dokumentasi-03.jpg" alt="Panel listrik" loading="lazy">
-                <div class="doc-info"><span>Panel Listrik</span><h3>Panel Distribusi</h3><p>Perakitan dan pemasangan panel distribusi listrik.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="panel">
-                <img src="dokumentasi-04.jpg" alt="Maintenance panel listrik" loading="lazy">
-                <div class="doc-info"><span>Maintenance</span><h3>Perawatan Panel</h3><p>Pengecekan dan perawatan sistem panel listrik.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="panel">
-                <img src="dokumentasi-05.jpg" alt="Teknisi memeriksa panel" loading="lazy">
-                <div class="doc-info"><span>Maintenance</span><h3>Pemeriksaan Sistem</h3><p>Pemeriksaan komponen untuk menjaga keandalan sistem.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="plts">
-                <img src="dokumentasi-06.jpg" alt="Pemasangan PLTS" loading="lazy">
-                <div class="doc-info"><span>PLTS</span><h3>Energi Terbarukan</h3><p>Pemasangan sistem panel surya untuk efisiensi energi.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="plts">
-                <img src="dokumentasi-07.jpg" alt="Panel surya" loading="lazy">
-                <div class="doc-info"><span>PLTS</span><h3>Sistem Panel Surya</h3><p>Instalasi dan pengujian sistem energi surya.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="lapangan">
-                <img src="dokumentasi-08.jpg" alt="Proyek lapangan" loading="lazy">
-                <div class="doc-info"><span>Lapangan</span><h3>Proyek Lapangan</h3><p>Dokumentasi pekerjaan teknisi di lokasi proyek.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="lapangan">
-                <img src="dokumentasi-09.jpg" alt="Tim teknisi" loading="lazy">
-                <div class="doc-info"><span>Lapangan</span><h3>Tim Profesional</h3><p>Tim teknisi bekerja sesuai prosedur keselamatan.</p></div>
-            </article>
-
-            <article class="doc-card" data-category="lapangan">
-                <img src="dokumentasi-10.jpg" alt="Hasil pekerjaan" loading="lazy">
-                <div class="doc-info"><span>Proyek</span><h3>Hasil Pekerjaan</h3><p>Hasil pekerjaan yang rapi, aman, dan tepat waktu.</p></div>
-            </article>
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">ADA PERTANYAAN?</span>
+                <h2><i class="fas fa-circle-question"></i> Pertanyaan yang Sering Diajukan</h2>
+                <p>Beberapa hal yang paling sering ditanyakan calon klien kami sebelum memulai proyek.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>Layanan apa saja yang ditangani PT. Tri Jaya Muktiwari?</span>
+                        <i class="fas fa-minus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami menangani instalasi listrik baru, maintenance rutin, pembuatan & pemasangan panel listrik (MCC/PCC/distribusi), troubleshooting gangguan listrik, instalasi PLTS/energi terbarukan, hingga energy audit — untuk rumah tinggal, kantor, pabrik, maupun gedung komersial.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah teknisi Anda bersertifikat resmi?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya. Seluruh tim teknisi kami bersertifikat keahlian (SLO/SLA) dan berpengalaman menangani proyek kelistrikan skala rumah tangga hingga industri sesuai standar PLN dan PU.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah ada garansi untuk setiap pekerjaan?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Setiap pekerjaan yang kami selesaikan disertai garansi. Detail masa garansi disesuaikan dengan jenis dan skala pekerjaan, dan akan dijelaskan lengkap saat penawaran.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Berapa lama waktu pengerjaan sebuah proyek?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Durasi pengerjaan tergantung skala dan kompleksitas proyek. Instalasi rumah tinggal umumnya beberapa hari, sementara proyek panel listrik atau PLTS skala industri bisa memakan waktu beberapa minggu. Estimasi pasti kami berikan setelah survei lokasi.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah tersedia layanan darurat (emergency) di luar jam kerja?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, kami menyediakan layanan troubleshooting emergency 24/7 untuk gangguan listrik mendadak, di luar jam operasional reguler Senin–Jumat 08.00–17.00 WIB.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana proses konsultasi dan penawaran harga?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Anda bisa menghubungi kami via WhatsApp atau mengisi formulir kontak di website ini. Tim kami akan menjadwalkan survei lokasi (jika diperlukan), lalu memberikan penawaran harga dan rencana kerja secara detail sebelum proyek dimulai.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah bisa menangani instalasi PLTS untuk rumah maupun industri?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bisa. Kami menangani instalasi PLTS mulai dari skala rumah tinggal untuk efisiensi tagihan listrik, hingga skala industri untuk penghematan biaya operasional jangka panjang.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Area kerja PT. Tri Jaya Muktiwari mencakup wilayah mana saja?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami berbasis di Cibitung, Kabupaten Bekasi, dan melayani area Bekasi serta sekitarnya. Untuk proyek di luar area tersebut, silakan hubungi kami langsung untuk konfirmasi ketersediaan.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
     <footer>
         <div class="social-links">
             <a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -223,6 +365,11 @@
         </div>
         <p>&copy; 2026 PT. Tri Jaya Muktiwari. Semua hak dilindungi.</p>
     </footer>
+
+    <a href="https://wa.me/6281296929581?text=Halo%20PT.%20Tri%20Jaya%20Muktiwari%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20kelistrikan"
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
